@@ -12,8 +12,8 @@ class UI(QDialog ):
  
     def on_click(self):
         try:
-            Plot(self.func.text(),self.minValue.text(),self.maxValue.text())
-            
+            p1=Plot(self.func.text(),self.minValue.text(),self.maxValue.text())
+            p1.plotFunction()
             
         except ValueError as err:
             err_message = err.args[0]
