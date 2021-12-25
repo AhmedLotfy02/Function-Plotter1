@@ -5,6 +5,7 @@ class Validation:
         func=func.replace(" ","")
         if func=="":
             raise ValueError("The Functon Field is Empty, Please Enter it")  
+            
         toMatch = "(-)?(\d+$)|((\d+[+-])?(\d+[\*\/])?[xX](\^\d+)?([+-]\d+([\*\/][xX](\^\d+)?)?)*)*$"
         matched = re.match(toMatch, func)
         if not matched:
