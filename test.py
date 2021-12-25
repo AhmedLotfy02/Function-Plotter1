@@ -10,16 +10,16 @@ class Test(unittest.TestCase):
     def test_Func(self):
         result=ValidationClass.Validation.ValidateFunction("2+x")
         self.assertTrue(result)
-        #result=ValidationClass.Validation.ValidateFunction("2*x+x^2")
-        #self.assertTrue(result)
+        result=ValidationClass.Validation.ValidateFunction("2*x+x^2")
+        self.assertTrue(result)
     
-    def test_Inequality(self):
-        result=ValidationClass.Validation.InequalityValidation(2,3)
-        self.assertFalse(result)
-        result=ValidationClass.Validation.InequalityValidation(5,3)
-        self.assertTrue(result)  
-        result=ValidationClass.Validation.InequalityValidation(3,3)
-        self.assertFalse(result)  
+    #def test_Inequality(self):
+        #result=ValidationClass.Validation.InequalityValidation(2,3)
+        #self.assertFalse(result)
+        #result=ValidationClass.Validation.InequalityValidation(5,3)
+        #self.assertTrue(result)  
+        #result=ValidationClass.Validation.InequalityValidation(3,3)
+        #self.assertFalse(result)  
             
         
         
