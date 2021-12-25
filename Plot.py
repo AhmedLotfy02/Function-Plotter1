@@ -26,6 +26,7 @@ class Plot:
         plt.xlabel("X")
         plt.ylabel("F(X)")
         plt.style.use("seaborn-dark")
+        plt.grid()
         plt.show()        
     
         
