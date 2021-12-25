@@ -1,9 +1,18 @@
-
+import re
 class Validation:
     
     def ValidateFunction(func):
+        func=func.replace(" ","")
         if func=="":
-            raise ValueError("The Functon Field is Empty, Please Enter it")    
+            raise ValueError("The Functon Field is Empty, Please Enter it")  
+        toMatch = "(-)?(\d+$)|((\d+[+-])?(\d+[\*\/])?[xX](\^\d+)?([+-]\d+([\*\/][xX](\^\d+)?)?)*)*$"
+        matched = re.match(toMatch, func)
+        if not matched:
+            raise ValueError("Invalid Function")
+    
+        func = func.replace('^', '**').replace('X', 'x')
+    
+        return func
     #validation function of Max & Min value to check whether they are integers or not 
     def IsInteger(val):
         if val=="":
