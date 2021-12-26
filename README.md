@@ -62,9 +62,32 @@ Function-Plotter1
 </div>
 
 <h2 href="#screenshots">ScreenShots</h2>
-<br>
-<br>
-<h2>The Program Interface</h2>
+<ol>
+ <li>
+  <h4>Program Interface</h4>
+  
+  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/1.PNG)
+
+ </li>
+ <li>
+  <h4>Function Field Validations</h4>
+  
+  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/2.PNG)
+  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/3.PNG)
+ </li>
+ <li>
+  <h4>Max&Min Fields Validations</h4>
+  
+  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/4.PNG)
+  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/5.PNG)
+    ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/7.PNG)
+ </li>
+ <li> 
+
+ <h4>Plotting Function Result</h4>   
+  
+ </li>
+</ol>
 
   
 
