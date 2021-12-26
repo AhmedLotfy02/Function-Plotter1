@@ -84,10 +84,15 @@ Function-Plotter1
  </li>
  
  <li> 
- <h4>Plotting Function Result ^^</h4> 
-  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/7.PNG)
+ <h4>Plotting Function Result</h4> 
+  <img src="https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/6.PNG">
  </li>
 </ol>
+
+<h2>Demo Video</h2>
+<ul>
+<li><a href="https://youtu.be/EjMoccMz57o">Click Here</a></li>
+</ul>
 
   
 
