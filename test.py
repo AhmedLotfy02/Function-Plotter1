@@ -14,8 +14,52 @@ class Test(unittest.TestCase):
         self.assertTrue(result)
         try:
             result=ValidationClass.Validation.ValidateFunction("2//x+x^2")
+            print('Passed valid func')
         except ValueError as e:
             self.assertEqual(type(e),ValueError)
+            print('Passed valid func')    
+        try:
+            result=ValidationClass.Validation.ValidateFunction("-2*x+x^2")
+            self.assertTrue(result)
+            print('Passed valid func')           
+
+        except ValueError as e:
+            self.assertEqual(type(e),ValueError)
+            print('Passed invalid func')           
+
+        try:
+            result=ValidationClass.Validation.ValidateFunction("x+x^2")
+            self.assertTrue(result)
+            print('Passed valid func')           
+
+        except ValueError as e:
+            self.assertEqual(type(e),ValueError) 
+            print('Passed invalid func')           
+
+        try:
+            result=ValidationClass.Validation.ValidateFunction("x*2+x^2")
+            self.assertTrue(result)
+            print('Passed valid func')           
+
+        except ValueError as e:
+            self.assertEqual(type(e),ValueError) 
+            print('Passed invalid func')  
+        try:
+            result=ValidationClass.Validation.ValidateFunction("3/x+x^2")
+            self.assertTrue(result)
+            print('Passed valid func')           
+
+        except ValueError as e:
+            self.assertEqual(type(e),ValueError) 
+            print('Passed invalid func')   
+        try:
+            result=ValidationClass.Validation.ValidateFunction("3^x+x^2")
+            self.assertTrue(result)
+            print('Passed valid func')           
+
+        except ValueError as e:
+            self.assertEqual(type(e),ValueError) 
+            print('Passed invalid func')              
     
     def test_Inequality(self):
         try:
