@@ -1,6 +1,7 @@
 import re
 class Validation:
     
+    #validate the function given by user
     def ValidateFunction(func):
         func=func.replace(" ","")
         if func=="":
@@ -10,10 +11,11 @@ class Validation:
         matched = re.match(toMatch, func)
         if not matched:
             raise ValueError("Invalid Function")
-    
         func = func.replace('^', '**').replace('X', 'x')
-    
         return func
+    
+    
+    
     #validation function of Max & Min value to check whether they are integers or not 
     def IsInteger(val):
         if val=="":
@@ -25,6 +27,7 @@ class Validation:
         except:
             raise ValueError("Please enter Integer Number")
     
+    #validate whether the minValue is greater than maxValue or not 
     def InequalityValidation(maxValue,minValue):
         if minValue>=maxValue:
             raise ValueError("Max Value Must be Greater Than MinValue")

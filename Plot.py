@@ -8,11 +8,11 @@ class Plot:
         self.func=Validation.ValidateFunction(function)
         
         
-        
+    #substitute x here to get F(x)    
     def FuncSubstitute(self, x):
-        val = eval(self.func)
+        val = eval(self.func) #built in function to substitute easily
         return val    
-    
+    #generate X-Coordnates and Y_Coordinates Lists
     def GenerateFunc(self):
         x_Coor=[]
         y_Coor=[]
@@ -20,6 +20,9 @@ class Plot:
             x_Coor.append(i)
             y_Coor.append(self.FuncSubstitute(i))
         return x_Coor,y_Coor
+    
+    
+    #Plot the function using matplot
     def plotFunction(self):
         x_Coor, y_Coor = self.GenerateFunc()
         plt.plot(x_Coor, y_Coor, color="red", linewidth=1.5, label=self.func)

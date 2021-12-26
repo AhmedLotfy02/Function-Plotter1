@@ -12,14 +12,28 @@ class Test(unittest.TestCase):
         self.assertTrue(result)
         result=ValidationClass.Validation.ValidateFunction("2*x+x^2")
         self.assertTrue(result)
+        try:
+            result=ValidationClass.Validation.ValidateFunction("2//x+x^2")
+        except ValueError as e:
+            self.assertEqual(type(e),ValueError)
     
-    #def test_Inequality(self):
-        #result=ValidationClass.Validation.InequalityValidation(2,3)
-        #self.assertFalse(result)
-        #result=ValidationClass.Validation.InequalityValidation(5,3)
-        #self.assertTrue(result)  
-        #result=ValidationClass.Validation.InequalityValidation(3,3)
-        #self.assertFalse(result)  
+    def test_Inequality(self):
+        try:
+            result=ValidationClass.Validation.InequalityValidation(2,3)
+
+        except ValueError as e:
+            self.assertEqual(type(e), ValueError)
+       
+        result=ValidationClass.Validation.InequalityValidation(5,3)
+        self.assertEqual(None,result)  
+        try:
+             result=ValidationClass.Validation.InequalityValidation(3,3)
+        except ValueError as e:
+             self.assertEqual(type(e), ValueError)
+
+    
+        
+    
             
         
         
