@@ -82,10 +82,10 @@ Function-Plotter1
   ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/5.PNG)
     ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/7.PNG)
  </li>
+ 
  <li> 
-
- <h4>Plotting Function Result</h4>   
-  
+ <h4>Plotting Function Result ^^</h4> 
+  ![alt text](https://github.com/AhmedLotfy02/Function-Plotter1/blob/main/screenshots/7.PNG)
  </li>
 </ol>
 
