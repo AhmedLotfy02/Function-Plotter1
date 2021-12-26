@@ -29,6 +29,6 @@ class Validation:
     
     #validate whether the minValue is greater than maxValue or not 
     def InequalityValidation(maxValue,minValue):
-        if minValue>=maxValue:
+        
+        if float(minValue)>float(maxValue):
             raise ValueError("Max Value Must be Greater Than MinValue")
-   
